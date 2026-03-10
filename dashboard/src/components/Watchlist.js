@@ -21,9 +21,9 @@ const WatchList = () => {
     const fetchData = async () => {
       try {
         const [wlRes, holdingsRes] = await Promise.all([
-          axios.get("http://localhost:3002/watchlist", { withCredentials: true }),
-          axios.get("http://localhost:3002/holdings", { withCredentials: true }),
-          axios.get("http://localhost:3002/currentUser", { withCredentials: true })
+          axios.get("http://13.61.112.94:3002/watchlist", { withCredentials: true }),
+          axios.get("http://13.61.112.94:3002/holdings", { withCredentials: true }),
+          axios.get("http://13.61.112.94:3002/currentUser", { withCredentials: true })
         ]);
         setWatchlist(wlRes.data.watchlist || []);
         setHoldings(holdingsRes.data || []);
@@ -42,7 +42,7 @@ const WatchList = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:3002/watchlist/add",
+        "http://13.61.112.94:3002/watchlist/add",
         { name: newStockName.trim(), price: Number(newStockPrice) },
         { withCredentials: true }
       );
@@ -64,7 +64,7 @@ const WatchList = () => {
   // Delete stock
   const handleDeleteStock = async (id) => {
     try {
-      const res = await axios.delete(`http://localhost:3002/watchlist/${id}`, { withCredentials: true });
+      const res = await axios.delete(`http://13.61.112.94:3002/watchlist/${id}`, { withCredentials: true });
       if (res.data.status) setWatchlist((prev) => prev.filter((s) => s._id !== id));
     } catch (err) {
       console.log("Delete stock error:", err);

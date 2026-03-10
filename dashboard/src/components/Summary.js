@@ -24,7 +24,7 @@ const Summary = () => {
 
         // 🔹 Get user
         const userRes = await axios.get(
-          "http://localhost:3002/currentUser",
+          "http://13.61.112.94:3002/currentUser",
           { withCredentials: true }
         );
 
@@ -34,7 +34,7 @@ const Summary = () => {
 
         // 🔹 Get holdings
         const holdingsRes = await axios.get(
-          "http://localhost:3002/holdings",
+          "http://13.61.112.94:3002/holdings",
           { withCredentials: true }
         );
 
@@ -53,7 +53,7 @@ const Summary = () => {
 
         // 🔹 Get PnL
         const pnlRes = await axios.get(
-          "http://localhost:3002/pnl",
+          "http://13.61.112.94:3002/pnl",
           { withCredentials: true }
         );
 

@@ -26,7 +26,7 @@ const ActionWindow = ({ uid, mode }) => {
       setLoading(true);
 
       const res = await axios.post(
-        "http://localhost:3002/orders",
+        "http://13.61.112.94:3002/orders",
         {
           name: uid,
           qty: Number(qty),

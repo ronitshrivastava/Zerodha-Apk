@@ -12,7 +12,7 @@ const watchlistRoutes = require("./routes/WatchlistRoutes");
 const app = express();
 
 app.use(cors({
-  origin: ["http://localhost:3000","http://localhost:3001"],
+  origin: ["http://localhost:3000","http://localhost:3001","https://main.d3tv0bgdl8zjki.amplifyapp.com","https://main.d25hu1o8d1jzcb.amplifyapp.com"],
   credentials: true
 }));
 
@@ -28,7 +28,7 @@ mongoose.connect(process.env.MONGO_URL)
 .then(()=>{
   console.log("MongoDB connected");
   app.listen(process.env.PORT || 3002, ()=>{
-    console.log("Server running");
+    console.log(`Server running ${process.env.PORT}`);
   });
 })
 .catch(err=>console.log(err));

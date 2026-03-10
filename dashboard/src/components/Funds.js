@@ -16,7 +16,7 @@ const Funds = () => {
     const fetchData = async () => {
       try {
         const userRes = await axios.get(
-          "http://localhost:3002/currentUser",
+          "http://13.61.112.94:3002/currentUser",
           { withCredentials: true }
         );
 
@@ -26,7 +26,7 @@ const Funds = () => {
         }
 
         const holdingsRes = await axios.get(
-          "http://localhost:3002/holdings",
+          "http://13.61.112.94:3002/holdings",
           { withCredentials: true }
         );
 
@@ -63,8 +63,8 @@ const Funds = () => {
 
     const url =
       showInput === "add"
-        ? "http://localhost:3002/add"
-        : "http://localhost:3002/withdraw";
+        ? "http://13.61.112.94:3002/add"
+        : "http://13.61.112.94:3002/withdraw";
 
     try {
       const res = await axios.post(url, { amount }, { withCredentials: true });
@@ -159,7 +159,7 @@ const Funds = () => {
       {/* Bottom CTA */}
       <div className="funds-footer card">
         <p>Start investing in commodities today</p>
-        <a href="http://localhost:3000/signup" className="btn open-account">
+        <a href="http://13.61.112.94:3002/signup" className="btn open-account">
           Open Account
         </a>
       </div>

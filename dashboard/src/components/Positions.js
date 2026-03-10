@@ -7,7 +7,7 @@ const Positions = () => {
 
   useEffect(() => {
 
-    axios.get("http://localhost:3002/positions", {
+    axios.get("http://13.61.112.94:3002/positions", {
       withCredentials: true
     })
     .then((res) => {
