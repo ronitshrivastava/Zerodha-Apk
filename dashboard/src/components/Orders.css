@@ -1,0 +1,117 @@
+/* Main Container */
+
+.orders-container{
+  width:100%;
+  padding:20px;
+  background:white;
+  min-height:100vh;
+  font-family: "Inter", sans-serif;
+}
+
+
+/* Heading */
+
+.orders-container h2{
+  font-size:22px;
+  font-weight:600;
+  margin-bottom:20px;
+  color:#222;
+}
+
+
+/* Table */
+
+.orders-table{
+  width:100%;
+  border-collapse:collapse;
+  background:white;
+  border-radius:8px;
+  overflow:hidden;
+  box-shadow:0 2px 8px rgba(0,0,0,0.05);
+}
+
+
+/* Table Header */
+
+.orders-table thead{
+  background:#f1f3f6;
+}
+
+.orders-table th{
+  text-align:left;
+  padding:14px 16px;
+  font-size:13px;
+  font-weight:600;
+  color:#555;
+  border-bottom:1px solid #e6e6e6;
+}
+
+
+/* Table Rows */
+
+.orders-table td{
+  padding:14px 16px;
+  font-size:14px;
+  color:#333;
+  border-bottom:1px solid #f0f0f0;
+}
+
+
+/* Row Hover */
+
+.orders-table tbody tr:hover{
+  background:#fafafa;
+  transition:0.2s;
+}
+
+
+/* BUY SELL Colors */
+
+.orders-table td:nth-child(2){
+  font-weight:600;
+}
+
+
+/* Delete Button */
+
+.delete-btn{
+  background:#ff4d4f;
+  color:white;
+  border:none;
+  padding:6px 12px;
+  font-size:13px;
+  border-radius:4px;
+  cursor:pointer;
+  transition:0.2s;
+}
+
+.delete-btn:hover{
+  background:#e63c3c;
+}
+
+
+/* No Orders Message */
+
+.orders-container p{
+  font-size:15px;
+  color:#777;
+  margin-top:20px;
+}
+
+
+/* Responsive */
+
+@media (max-width:768px){
+
+  .orders-table th,
+  .orders-table td{
+    padding:10px;
+    font-size:12px;
+  }
+
+  .delete-btn{
+    padding:4px 8px;
+    font-size:12px;
+  }
+
+}

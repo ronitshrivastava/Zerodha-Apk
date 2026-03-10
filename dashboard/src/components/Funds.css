@@ -1,0 +1,104 @@
+.funds-page {
+  max-width: 800px;
+  margin: 20px auto;
+  font-family: 'Poppins', sans-serif;
+  padding: 0 15px;
+  color: #1e1e1e;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.funds-header h2 {
+  margin-bottom: 5px;
+}
+
+.funds-header p {
+  color: #6b6b6b;
+  margin-bottom: 15px;
+}
+
+.balance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f0f4f8;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.balance p {
+  font-weight: 500;
+  color: #6b6b6b;
+}
+
+.balance h3 {
+  color: #0f5132;
+  margin: 0;
+}
+
+.fund-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.fund-input input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.fund-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn.add {
+  background-color: #0f5132;
+  color: white;
+}
+
+.btn.withdraw {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.summary-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.summary-cards .card h4 {
+  margin-top: 5px;
+  color: #0f5132;
+}
+
+.funds-footer {
+  text-align: center;
+}
+
+.funds-footer .btn.open-account {
+  background-color: #0d6efd;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  display: inline-block;
+  margin-top: 10px;
+}

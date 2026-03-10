@@ -1,0 +1,10 @@
+
+.section .profit {
+  color: rgb(72, 194, 55) !important;
+  font-weight: 600;
+}
+
+.section .loss {
+  color: rgb(250, 118, 78) !important;
+  font-weight: 600;
+}
